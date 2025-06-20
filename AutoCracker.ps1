@@ -1,7 +1,7 @@
 Write-Host "Starting Download and Installation of Shapr3D..." -ForegroundColor Green
 New-Item -ItemType Directory -Path "C:\ProgramData\r3d_path\pull" -Force > $null
-Invoke-WebRequest -Uri https://raw.githubusercontent.com/Anran2786/Shapr3D_AutoCracker/main/pull/shapr3d-5-841-8708-0.msixbundle -OutFile "C:\ProgramData\r3d_path\pull\r3d.msixbundle"
-Add-AppxPackage -Path "C:\ProgramData\r3d_path\pull\r3d.msixbundle" -ForceApplicationShutdown
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/Anran2786/Shapr3D_AutoCracker/main/pull/Shapr3D.Package_5.841.8708.0_x64.msix -OutFile "C:\ProgramData\r3d_path\pull\r3d.msix"
+Add-AppxPackage -Path "C:\ProgramData\r3d_path\pull\r3d.msix" -ForceApplicationShutdown
 Remove-Item -Path "C:\ProgramData\r3d_path\pull" -Force -Recurse
 Start-Sleep -Seconds 3
 Write-Host "Downloading cracker" -ForegroundColor Green > $null
